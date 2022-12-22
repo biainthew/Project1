@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title> </title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='경기도 교육청 홈페이지'>
+	<meta name='Subject' content='경기도 교육청 서브 페이지1'>
+	<meta name='Keywords' content='경기도 교육청'>
+	<meta name='Author' content='bia'>
+	<meta name='Publisher' content='bia'>
+	<meta name='Description' content='웹접근성, 웹표준을 준수한 경기도 교육청 클론코딩 입니다.'>
+	<meta name='Author-Date' content='2022/10/22'>
+	<meta name='Robots' content='index,follow'>
+
+
+	<link rel='stylesheet' href='css/reset.css'>
+	<link rel='stylesheet' href='css/style_map.css'>
+	
+	<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=b13db29ccab45a66e7ab3db227b44bb2"></script>
+	<script src="./js/style_map.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <ul id="skip">
+            <li><a href="#header">헤더 바로가기</a></li>
+            <li><a href="#nav">메뉴 바로가기</a></li>
+            <li><a href="#content">내용 바로가기</a></li>
+        </ul>
+        <header id="header">
+			<div class="container headerbox">
+				<div class="headerboxtop">
+					<h1 class="logo">
+						<a href="./index.html" title="메인 페이지 바로가기" class="ir_pm">로고이미지</a>
+					</h1>
+					<form action="#" name="searchForm" method="post" id="searchForm">
+						<fieldset class="searchSec">
+							<legend>통합검색</legend>
+							<label for="searchKeyword">검색어 입력</label>
+							<input type="text" value="검색어를 입력하세요">
+							<a href="#" class="searchIcon" title="검색 아이콘">검색</a>
+							<a href="#" class="keybordIcon" title="키보드 아이콘">키보드</a>
+						</fieldset>
+					</form>
+					<div class="loginBox">
+						<ul class="cf">
+							<li><a href="./index_login.html" title="로그인">로그인</a></li>
+							<li><a href="./index_sitemap.html" title="누리집지도">누리집지도</a></li>
+							<li><a href="./index_engpage.html" title="ENGLISH">ENGLISH</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="menuTab" class="container">
+					<div class="menuTabBg">
+						<div class="menuTabLeft container">
+							<ul>
+								<li><a href="#" title="청렴한 경기교육">청렴한 경기교육</a></li>
+								<li><a href="#" title="전/편입학/진학안내">전/편입학/진학안내</a></li>
+								<li><a href="#" title="교육복지지원">교육복지지원</a></li>
+								<li><a href="#" title="학교안전">학교안전</a></li>
+								<li><a href="#" title="학교 업무 재구조화 시범학교">학교 업무 재구조화 시범학교</a></li>
+								<li><a href="#" title="인사/채용/시험">인사/채용/시험</a></li>
+								<li><a href="#" title="통합자료실">통합자료실</a></li>
+								<li><a href="#" title="정보공개/교육통계">정보공개/교육통계</a></li>
+								<li><a href="./index_login.html" title="로그인">로그인</a></li>
+							</ul>
+						</div>
+					</div>
+					<ul class="cf">
+						<li class="menu1">
+							<a href="./index1_1.html" title="전자민원">전자민원</a>
+							<ul>
+								<li class="menu1_1"><a href="./index1_1.html" title="전자민원창구">전자민원창구</a></li>
+								<li class="menu1_2"><a href="#" title="경기에듀콜센터">경기에듀콜센터</a></li>
+								<li class="menu1_3"><a href="#" title="신고센터">신고센터</a></li>
+								<li class="menu1_4"><a href="#" title="경기교육행정서비스">경기교육행정서비스</a></li>
+								<li class="menu1_5"><a href="#" title="스승찾기">스승찾기</a></li>
+								<li class="menu1_6"><a href="#" title="누리집 이용안내">누리집 이용안내</a></li>
+								<li class="menu1_7"><a href="#" title="재해예방 및 안전보건 의견청취">재해예방 및 안전보건 의견청취</a></li>
+							</ul>
+						</li>
+						<li class="menu2"><a href="./index1_2.html" title="뉴스/소식">뉴스/소식</a>
+							<ul>
+								<li class="menu2_1"><a href="./index1_2.html" title="공지사항">공지사항</a></li>
+								<li class="menu2_2"><a href="#" title="보도자료">보도자료</a></li>
+								<li class="menu2_3"><a href="#" title="고시/공고/입법예고">고시/공고/입법예고</a></li>
+								<li class="menu2_4"><a href="#" title="경기교육소식">경기교육소식</a></li>
+							</ul>
+						</li>
+						<li class="menu3"><a href="./index1_3.html" title="주민참여">주민참여</a>
+							<ul>
+								<li class="menu3_1"><a href="./index1_3.html" title="자율참여공간">자율참여공간</a></li>
+								<li class="menu3_2"><a href="#" title="주민참여예산">주민참여예산</a></li>
+								<li class="menu3_3"><a href="#" title="정책토론">정책토론</a></li>
+								<li class="menu3_4"><a href="#" title="제안제도">제안제도</a></li>
+								<li class="menu3_5"><a href="#" title="안전신고">안전신고</a></li>
+								<li class="menu3_6"><a href="#" title="적극행정">적극행정</a></li>
+							</ul>
+						</li>
+						<li class="menu4"><a href="./index1_4.html" title="교육청 소개">교육청 소개</a>
+						 	<ul>
+								<li class="menu4_1"><a href="./index1_4.html" title="열린교육감실">열린교육감실</a></li>
+								<li class="menu4_2"><a href="#" title="경기교육정책">경기교육정책</a></li>
+								<li class="menu4_3"><a href="#" title="경기교육브랜드">경기교육브랜드</a></li>
+								<li class="menu4_4"><a href="#" title="경기교육역사">경기교육역사</a></li>
+								<li class="menu4_5"><a href="#" title="조직안내">조직안내</a></li>
+						 	</ul>
+						</li>
+						<li class="menu5"><a href="./index1_5.html" title="정보공개">정보공개</a>
+							<ul>
+								<li class="menu5_1"><a href="./index1_5.html" title="정보공개">정보공개</a></li>
+								<li class="menu5_2"><a href="#" title="사전정보공표">사전정보공표</a></li>
+								<li class="menu5_3"><a href="#" title="비공개대상정보 세부기준">비공개대상정보 세부기준</a></li>
+								<li class="menu5_4"><a href="#" title="원문정보공개">원문정보공개</a></li>
+								<li class="menu5_5"><a href="#" title="정보목록">정보목록</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="btn" title="전체메뉴열기"></a></li>
+					</ul>
+					
+				</div>
+				<div></div>
+			</div>
+		</header>
+        <main id="main">
+            <div class="container">
+                <nav id="nav">
+					<h1 class="navtit">교육청 소개</h1>
+					<ul>
+						<li><a href="./index1_4.html" title="열린교육감실">열린교육감실</a></li>
+						<li><a href="#" title="경기교육정책">경기교육정책</a></li>
+						<li><a href="#" title="경기교육브랜드">경기교육브랜드</a></li>
+						<li><a href="#" title="경기교육역사">경기교육역사</a></li>
+						<li><a href="#" title="조직안내">조직안내</a>
+							<ul>
+								<li><a href="#">조직도</a></li>
+								<li><a href="#">청사배치도</a></li>
+								<li><a href="./index_map.html">찾아오시는길</a></li>
+								<li><a href="#">기관별현황</a></li>
+								<li><a href="#">학교찾기</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+                <div class="contwrap">
+                    <div class="cont_top">
+                        <h1>진정/질의/건의</h1>
+                        <a href="#" title="sns 바로가기"><img src="./img1_1/btn_sns.png" alt="sns"></a>
+                        <a href="#" title="프린트 바로가기"><img src="./img1_1/btn_print.png" alt="프린트"></a>
+                    </div>
+                    <div class="cont_box1">
+                        <ul>
+                            <li><span><img src="./img1_1/ico_home.png" alt="집 아이콘"></span></li>
+                            <li>전자민원</li>
+                            <li>전자민원창구</li>
+                            <li>민원안내</li>
+                            <li>진정/질의/건의</li>
+                        </ul>
+                    </div>
+                    <div class="cont_box2">
+                        <div class="cb2_topwrap">
+                            <div class="cb2_top1"><a href="#" title="제1부교육감 소속">제1부교육감 소속</a></div>
+                            <div class="cb2_top2"><a href="#" title="제2부교육감 소속">제2부교육감 소속</a></div>
+                        </div>
+						<div id="map" style="width:100%;height:400px;"></div>
+						<table class="table1">
+							<tr>
+								<th>버스 이용</th>
+								<td>수원역 앞에서 11, 13, 16, 24, 32-1번 시내버스를 타고 경기대학교 및 보훈원 방향 시내버스를 이용하여 수원북중학교 앞에서 하차</td>
+							</tr>
+							<tr>
+								<th>승용차 이용</th>
+								<td>코스1) 동수원IC - 경기지방경찰청 - 연무동 사거리 - 벽산아파트 앞 - 경기도교육청 <br> 코스2) 의왕IC - 장안지하차도 - 영화초교사거리 - 대충원길 - 경기도교육청</td>
+							</tr>
+							<tr>
+								<th>전철 이용</th>
+								<td>수원역에서 하차하여 시내버스 11, 13, 35, 7-1번을 승차하여 경기대학교 및 보훈원 방향으로 시내버스를 이용하여 보훈교육원 또는 경기남부보훈지청·경기도교육청 정류장에서 하차</td>
+							</tr>
+						</table>
+                    </div>
+                    <div class="cont_box3 cf">
+                        <span class="consent">이 페이지의 내용과 편의성에 만족하십니까?</span>
+                        <ul>
+                            <li>
+                                <input type="radio" id="fives">
+                                <label for="fives">매우만족</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="fives">
+                                <label for="fives">만족</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="fives">
+                                <label for="fives">보통</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="fives">
+                                <label for="fives">불만족</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="fives">
+                                <label for="fives">매우불만족</label>
+                            </li>
+                            <li><a href="#" title="등록하기">등록하기</a></li>
+                        </ul>
+                    </div>
+                    <div class="cont_box4">
+                        <table>
+                            <tr>
+                                <th>담당자</th>
+                                <th>담당부서</th>
+                                <th>전화번호</th>
+                            </tr>
+                            <tr>
+                                <td>조흥래</td>
+                                <td>민원봉사담당</td>
+                                <td>031-249-0321</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+			<div class="container footerbox1">
+				<ul class="fb1left">
+					<li><a href="#" title="청사배치도">청사배치도
+						<li><a href="./index_map.html" title="찾아오시는 길">찾아오시는 길</a></li>
+						<li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+						<li><a href="#" title="누리집 이용약관">누리집 이용약관</a></li>
+					</a></li>
+				</ul>
+				<div class="selectBox first">
+					<a href="#" title="관련기관 바로가기">관련기관 바로가기</a>
+					<div class="innerBox">
+						<ul>
+							<li><a href="#" title="정부/지자체 조직도">정부/지자체 조직도</a></li>
+							<li><a href="#" title="교육부">교육부</a></li>
+							<li><a href="#" title="경기도의회 교육기획위원회">경기도의회 교육기획위원회</a></li>
+							<li><a href="#" title="경기도의회 교육행정위원회">경기도의회 교육행정위원회</a></li>
+							<li><a href="#" title="경기도의회">경기도의회</a></li>
+							<li><a href="#" title="경기도학교안전공제회">경기도학교안전공제회</a></li>
+							<li><a href="#" title="광주광역시교육청">광주광역시교육청</a></li>
+							<li><a href="#" title="대구광역시교육청">대구광역시교육청</a></li>
+							<li><a href="#" title="대전광역시교육청">대전광역시교육청</a></li>
+							<li><a href="#" title="부산광역시교육청">부산광역시교육청</a></li>
+							<li><a href="#" title="서울광역시교육청">서울광역시교육청</a></li>
+							<li><a href="#" title="울산광역시교육청">울산광역시교육청</a></li>
+							<li><a href="#" title="인천광역시교육청">인천광역시교육청</a></li>
+							<li><a href="#" title="강원도교육청">강원도교육청</a></li>
+							<li><a href="#" title="경상남도교육청">경상남도교육청</a></li>
+							<li><a href="#" title="경상북도교육청">경상북도교육청</a></li>
+							<li><a href="#" title="전라남도교육청">전라남도교육청</a></li>
+							<li><a href="#" title="전라북도교육청">전라북도교육청</a></li>
+							<li><a href="#" title="충청남도교육청">충청남도교육청</a></li>
+							<li><a href="#" title="충청북도교육청">충청북도교육청</a></li>
+							<li><a href="#" title="제주특별자치도교육청">제주특별자치도교육청</a></li>
+							<li><a href="#" title="세종특별자치시교육청">세종특별자치시교육청</a></li>
+							<li><a href="#" title="국제교육진흥원">국제교육진흥원</a></li>
+							<li><a href="#" title="경기교육장학재단">경기교육장학재단</a></li>
+							<li><a href="#" title="한국교육개발원">한국교육개발원</a></li>
+							<li><a href="#" title="한국교육학술정보원">한국교육학술정보원</a></li>
+							<li><a href="#" title="한국직업능력개발원">한국직업능력개발원</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="selectBox">
+					<a href="#" title="교육지원청 바로가기">교육지원청 바로가기</a>
+					<div class="innerBox">
+						<ul>
+							<li><a href="#" title="가평교육지원청">가평교육지원청</a></li>
+							<li><a href="#" title="고양교육지원청">고양교육지원청</a></li>
+							<li><a href="#" title="광명교육지원청">광명교육지원청</a></li>
+							<li><a href="#" title="광주하남교육지원청">광주하남교육지원청</a></li>
+							<li><a href="#" title="구리남양주교육지원청">구리남양주교육지원청</a></li>
+							<li><a href="#" title="군포의왕교육지원청">군포의왕교육지원청</a></li>
+							<li><a href="#" title="김포교육지원청">김포교육지원청</a></li>
+							<li><a href="#" title="동두천양주교육지원청">동두천양주교육지원청</a></li>
+							<li><a href="#" title="부천교육지원청">부천교육지원청</a></li>
+							<li><a href="#" title="성남교육지원청">성남교육지원청</a></li>
+							<li><a href="#" title="수원교육지원청">수원교육지원청</a></li>
+							<li><a href="#" title="시흥교육지원청">시흥교육지원청</a></li>
+							<li><a href="#" title="안산교육지원청">안산교육지원청</a></li>
+							<li><a href="#" title="안성교육지원청">안성교육지원청</a></li>
+							<li><a href="#" title="안양과천교육지원청">안양과천교육지원청</a></li>
+							<li><a href="#" title="양평교육지원청">양평교육지원청</a></li>
+							<li><a href="#" title="여주교육지원청">여주교육지원청</a></li>
+							<li><a href="#" title="연천교육지원청">연천교육지원청</a></li>
+							<li><a href="#" title="용인교육지원청">용인교육지원청</a></li>
+							<li><a href="#" title="의정부교육지원청">의정부교육지원청</a></li>
+							<li><a href="#" title="이천교육지원청">이천교육지원청</a></li>
+							<li><a href="#" title="파주교육지원청">파주교육지원청</a></li>
+							<li><a href="#" title="평택교육지원청">평택교육지원청</a></li>
+							<li><a href="#" title="포천교육지원청">포천교육지원청</a></li>
+							<li><a href="#" title="화성오산교육지원청">화성오산교육지원청</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="selectBox">
+					<a href="#" title="직속기관 바로가기">직속기관 바로가기</a>
+					<div class="innerBox">
+						<ul>
+							<li><a href="#" title="직속기관 바로가기">직속기관 바로가기</a></li>
+							<li><a href="#" title="경기도교육청안전교육관">경기도교육청안전교육관</a></li>
+							<li><a href="#" title="경기도교육연수원">경기도교육연수원</a></li>
+							<li><a href="#" title="경기도교육복지종합센터">경기도교육복지종합센터</a></li>
+							<li><a href="#" title="경기도교육정보기록원">경기도교육정보기록원</a></li>
+							<li><a href="#" title="경기도교직원가평수덕원">경기도교직원가평수덕원</a></li>
+							<li><a href="#" title="경기도교직원안성수덕원">경기도교직원안성수덕원</a></li>
+							<li><a href="#" title="재단법인 경기도교육연구원">재단법인 경기도교육연구원</a></li>
+							<li><a href="#" title="경기도교직원연천수덕원">경기도교직원연천수덕원</a></li>
+							<li><a href="#" title="경기도융합과학교육원">경기도융합과학교육원</a></li>
+							<li><a href="#" title="경기도도당학생체육관">경기도도당학생체육관</a></li>
+							<li><a href="#" title="경기과천교육도서관">경기과천교육도서관</a></li>
+							<li><a href="#" title="경기의정부교육도서관">경기의정부교육도서관</a></li>
+							<li><a href="#" title="경기여주가남교육도서관">경기여주가남교육도서관</a></li>
+							<li><a href="#" title="경기화성교육도서관">경기화성교육도서관</a></li>
+							<li><a href="#" title="경기성남교육도서관">경기성남교육도서관</a></li>
+							<li><a href="#" title="경기중앙교육도서관">경기중앙교육도서관</a></li>
+							<li><a href="#" title="경기평택교육도서관">경기평택교육도서관</a></li>
+							<li><a href="#" title="경기광주교육도서관">경기광주교육도서관</a></li>
+							<li><a href="#" title="경기포천교육도서관">경기포천교육도서관</a></li>
+							<li><a href="#" title="경기김포교육도서관">경기김포교육도서관</a></li>
+							<li><a href="#" title="경기도교육청평화교육원">경기도교육청평화교육원</a></li>
+							<li><a href="#" title="경기도유아체험교육원">경기도유아체험교육원</a></li>
+							<li><a href="#" title="경기도율곡교육연수원">경기도율곡교육연수원</a></li>
+							<li><a href="#" title="경기도언어교육연수원">경기도언어교육연수원</a></li>
+							<li><a href="#" title="경기도평촌학생체육관">경기도평촌학생체육관</a></li>
+							<li><a href="#" title="김포학생야영장">김포학생야영장</a></li>
+							<li><a href="#" title="양평학생야영장">양평학생야영장</a></li>
+							<li><a href="#" title="여주학생야영장">여주학생야영장</a></li>
+							<li><a href="#" title="연천학생야영장">연천학생야영장</a></li>
+							<li><a href="#" title="용인학생야영장">용인학생야영장</a></li>
+							<li><a href="#" title="포천학생야영장">포천학생야영장</a></li>
+							<li><a href="#" title="경기도학생교육원">경기도학생교육원</a></li>
+							<li><a href="#" title="경기도평생교육학습관">경기도평생교육학습관</a></li>
+							<li><a href="#" title="경기도혁신교육연수원">경기도혁신교육연수원</a></li>
+							<li><a href="#" title="경기도공업계고등학교공동실습소">경기도공업계고등학교공동실습소</a></li>
+							<li><a href="#" title="경기도농업계고등학교공동실습소">경기도농업계고등학교공동실습소</a></li>
+							<li><a href="#" title="16민주시민교육원">4.16민주시민교육원</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container footerbox2">
+				<p>경기도교육청 남부청사 (16279) 경기도 수원시 장안구 조원로 18 ☎ 031-1396, 031-249-0114 평일(08:30~18:30) / 당직실(야간) 031-249-0341, 031-249-0342</p>
+				<p>경기도교육청 북부청사 (11759) 경기도 의정부시 동일로 700 ☎ 031-1396, 031-249-0114 평일(08:30~18:30)</p>
+				<p>Copyright © Gyeonggido Office of Education, All Right Reserved.</p>
+				<img src="./img/img_callcenter.png" alt="1396이미지">
+			</div>
+		</footer>
+    </div>
+</body>
