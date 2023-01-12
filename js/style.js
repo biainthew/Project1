@@ -76,12 +76,14 @@ let mbtnP = true;
 mbtnPause.click(function(){
     if(mbtnP==true){
         clearInterval(setIntervalId);
+        $(this).find('img').attr('src','./img/btn_play.png')
         mbtnP=false;
     }else{
         rolling();
+        $(this).find('img').attr('src','./img/btn_pause.png')
         mbtnP=true;
     }
-})
+});
 
 // pagination
 let totalSlide=$('.over>a').length;
@@ -145,9 +147,11 @@ let btnp = true;
 sbtnPause.click(function(){
     if(btnp==true){
         clearInterval(setIntervalId1);
+        $(this).find('img').attr('src','./img/btn_play.png')
         btnp=false;
     }else{
         rolling1();
+        $(this).find('img').attr('src','./img/btn_pause.png')
         btnp=true;
     }
 })
